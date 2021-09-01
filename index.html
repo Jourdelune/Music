@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- Centered link -->
+      <div class="topnav-centered center-v">
+        <a href="#contact">Music</a>
+        <a href="#contact">Podcasts</a>
+        <a href="#contact">Favoris</a>
+        <a href="#contact">Flow</a>
+      </div>
+      
+      <!-- Left-aligned links (default) -->
+      <a href="#news" class="active center-v">HeseMusic</a>
+      
+      
+      <!-- Right-aligned links -->
+      <div class="topnav-right center-v">
+        <a href="#search"><form action="/action_page.php">
+          <div class="search-container">
+            <form>
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </a>
+        <a class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <div style="height: 65px; width: 100%"></div>
+    <div class="topnav1" id="topnav1">
+      <ul class="nav-ul">
+        <li class=""><a href="#search" class="nav-li"><form action="/action_page.php">
+          <a>
+            <div class="search-mobile">
+              <form>
+                <button type="submit"><i class="fa fa-search" class="mobile-nav-btn"></i></button>
+                <input type="text" placeholder="Search.." name="search">
+              </form>
+            </div>
+          </a>
+        </li>
+        <li class="p10"><a href="#contact" class="nav-li">Podcasts</a></li>
+        <li class="p10"><a href="#contact" class="nav-li">Favoris</a></li>
+        <li class="p10"><a href="#contact" class="nav-li">Music</a></li>
+        <li class="p10"><a href="#contact" class="nav-li">Flow</a></li>
+      </ul>
+    </div>
+    <!-- End navbar -->
+
+    <div class="container">
+      <div class="middlepane">
+        <div id="main" class="test">
+          <div class="track-icon"></div>
+          <div style="margin: 10px;">
+            <h1 class="title-t">Top of July</h1>
+            <div class="text-desc">
+              <p class="desc-t">Ready to pour… the Font Awesome 6 Beta! The next generation of the welease! Subsefcribe to ghrt hrthds rths th trh zhFont ...</p>
+            </div>
+            <div class="info-div">
+              <p class="info-t">Hesediel | 10 tracks | 31:50 Duration</p>
+              <button class="button-p"><i class="fas fa-play"></i> Play</button>
+              <button class="button-add">Add Playlist</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="rightpane">
+        <h1>Test Page</h1>
+      </div>
+    </div>
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("topnav1");
+        if (x.className === "topnav1") {
+          x.className += " responsive";
+          console.log("ok")
+        } else {
+          x.className = "topnav1";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  height: 65px;
+}
+
+.center-v {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.topnav a {
+  float: left;
+  color: #979797;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.topnav a:hover:not(.active) {
+  animation-duration: 0.3s;
+  color: black;
+}
+
+.topnav a.active {
+  font-weight: bold;
+  color: #ff9c75;
+}
+
+.topnav-centered  {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  max-width: 150px;
+  width: 100%;
+}
+
+.topnav input[type=text]:focus {
+  outline: none !important;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.search-container {
+  z-index: 1;
+  box-shadow: 3px 3px 10px #cecece;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.middlepane {
+  margin-left: 5%;
+  width: 65%;
+  height: 100%;
+  float: left;
+  border-collapse: collapse;
+}
+
+.rightpane {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  float: right;
+  border-collapse: collapse;
+}
+
+.track-icon {
+  position: relative;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  background-image: url("/home/jourdelune/music/assets/image/hqdefault.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 10%;
+}
+
+#main {
+  display: flex;
+}
+
+.title-t {
+  color: #5c5c5c;
+  font-weight: bolder !important;
+  font-size: 40px;
+}
+
+.text-desc {
+  overflow-y: scroll;
+  height: 80px;
+ 
+}
+
+.desc-t {
+  margin: 0px;
+  padding: 0px;
+  color: #b0b0b0;
+  font-weight: 400;
+}
+
+.info-t {
+  color: #474747;
+  font-weight: 550;
+}
+
+.button-p {
+  background-color: #f98b60;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-add {
+  background-color: white;
+  box-shadow: 1px 0px 20px #cecece;
+  border-radius: 5px;
+  border: none;
+  color: #767676;
+  font-weight: 500;
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+}
+
+.text-desc {
+  height: 80px;
+  max-height: 80px;
+}
+
+.search-mobile input[type=text] {
+  box-shadow: 3px 3px 10px #cecece;
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  max-width: 150px;
+  width: 100%;
+}
+
+.search-mobile input[type=text]:focus {
+  outline: none !important;
+}
+
+.search-mobile button {
+  box-shadow: 3px 3px 10px #cecece;
+  padding: 6px 10px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px 5px;
+}
+
+.nav-ul {
+  list-style: none;
+}
+
+.p10 {
+  margin-top: 10px;
+}
+
+.nav-li {
+  color: #979797;
+  text-decoration: none;
+  font-size: large;
+  
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav1 {
+  display: none;
+}
+
+@media screen and (max-width: 652px)
+{
+  #main {
+    display: block !important;
+  }
+  .track-icon {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .topnav a:not(.icon, .active) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .responsive {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 980px)
+{
+  .rightpane {
+    float: none;
+  }
+  .middlepane {
+    width: 90%;
+  }
+}

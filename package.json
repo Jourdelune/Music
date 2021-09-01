@@ -1,0 +1,23 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "A music app",
+  "main": "main.js",
+  "scripts": {
+    "test": "Jourdelune",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jourdelune/Music.git"
+  },
+  "author": "Jourdelune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jourdelune/Music/issues"
+  },
+  "homepage": "https://github.com/Jourdelune/Music#readme",
+  "devDependencies": {
+    "electron": "^13.2.3"
+  }
+}
