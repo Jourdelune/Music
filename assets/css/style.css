@@ -10,6 +10,7 @@ body {
   overflow: hidden;
   background-color: white;
   height: 65px;
+  z-index: 1;
 }
 
 .center-v {
@@ -128,7 +129,7 @@ body {
 }
 
 .text-desc {
-  overflow-y: scroll;
+  overflow: auto; 
   height: 80px;
  
 }
@@ -225,7 +226,10 @@ body {
 }
 
 .topnav1 {
+  visibility: hidden;
   display: none;
+  opacity: 0;
+  z-index: 1;
 }
 
 @media screen and (max-width: 652px)
@@ -247,6 +251,10 @@ body {
 
   .responsive {
     display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 10s, visibility 10s;
+    
   }
 }
 
@@ -258,4 +266,100 @@ body {
   .middlepane {
     width: 90%;
   }
+}
+
+table {
+  margin-top: 40px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  color: #979797;
+  text-decoration: none;
+  font-weight: 350;
+  text-align: left;
+  padding: 8px;
+}
+
+.track-choice:hover {
+  transition-duration: 0.1s;
+  background-color: #fadbcf !important;
+}
+
+td {
+  border-top: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+
+}
+
+.logo-align {
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.track-name {
+  font-weight: 400;
+  font-size: 15px;
+  overflow: auto; 
+}
+
+.artist-name {
+  font-weight: 400;
+  font-size: 15px;
+  color: #616161;
+  overflow: auto; 
+}
+
+.album {
+  font-weight: 400;
+  font-size: 15px;
+  overflow: auto; 
+}
+
+.timer-table {
+  font-weight: 400;
+  font-size: 15px;
+  overflow: auto; 
+}
+
+.play-in-survol {
+  position: relative;
+  left: -30px;
+  bottom: -3px;
+  color: #fa8c61;
+  z-index: 1;
+  opacity: 0;
+  overflow: auto; 
+}
+
+.play-in-survol:hover {
+  position: relative;
+  left: -30px;
+  opacity: 1;
+}
+
+.logo-align:hover + .play-in-survol {
+  opacity: 1;
+}
+
+.play-in-survol:hover {
+  opacity: 1 !important;
+}
+
+.logo-align:hover , .play-in-survol:hover{
+  opacity: 0.5;
+}
+
+.Centered-xy {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+tr {
+  overflow: auto; 
 }

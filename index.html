@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
   </head>
 
   <body>
@@ -68,17 +69,27 @@
             </div>
             <div class="info-div">
               <p class="info-t">Hesediel | 10 tracks | 31:50 Duration</p>
-              <button class="button-p"><i class="fas fa-play"></i> Play</button>
-              <button class="button-add">Add Playlist</button>
+              <button class="button-p" onclick="PlayMusic()"><i class="fas fa-play"></i> Play</button>
+              <button class="button-add">Add to Playlist</button>
             </div>
           </div>
         </div>
-        
+
+        <table style="width:100%" id="liste-track">
+          <tr>
+            <th>TRACK</th>
+            <th>ARTIST</th>
+            <th>ALBUM</th>
+            <th>TIME</th>
+          </tr>
+        </table> 
       </div>
-      
       <div class="rightpane">
         <h1>Test Page</h1>
       </div>
+    </div>
+
+    <div class="music-set">
     </div>
     
     <script>
@@ -86,11 +97,18 @@
         var x = document.getElementById("topnav1");
         if (x.className === "topnav1") {
           x.className += " responsive";
-          console.log("ok")
         } else {
           x.className = "topnav1";
         }
       }
+
+      function PlayMusic(elmnt, clr) {
+        let audio = new Audio(clr);
+        audio.play();
+      }
     </script>
   </body>
+
+  <script src="./renderer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
 </html>

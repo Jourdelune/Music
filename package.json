@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "Jourdelune",
-    "start": "electron ."
+    "start": "electron .",
+    "electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron ."
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "homepage": "https://github.com/Jourdelune/Music#readme",
   "devDependencies": {
     "electron": "^13.2.3"
+  },
+  "dependencies": {
+    "jsmediatags": "^3.9.7",
+    "music-metadata": "^7.11.4"
   }
 }
