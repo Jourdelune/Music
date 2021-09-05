@@ -69,7 +69,7 @@
             </div>
             <div class="info-div">
               <p class="info-t">Hesediel | 10 tracks | 31:50 Duration</p>
-              <button class="button-p" onclick="PlayMusic()"><i class="fas fa-play"></i> Play</button>
+              <button class="button-p" onclick="music.PlayMusic()"><i class="fas fa-play"></i> Play</button>
               <button class="button-add">Add to Playlist</button>
             </div>
           </div>
@@ -89,8 +89,7 @@
       </div>
     </div>
 
-    <div class="music-set">
-    </div>
+   
     
     <script>
       function myFunction() {
@@ -101,14 +100,9 @@
           x.className = "topnav1";
         }
       }
-
-      function PlayMusic(elmnt, clr) {
-        let audio = new Audio(clr);
-        audio.play();
-      }
     </script>
   </body>
 
   <script src="./renderer.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+  <script src="./musicLauncheur.js"></script>
 </html>
